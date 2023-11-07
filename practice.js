@@ -303,7 +303,7 @@ function employeeUpdater() {
   for (let i in employees) {
     if (employees[i].firstName === 'Theo') {
       employees.splice(i, 1)
-    }
+    } else
     if (employees[i].firstName === 'Lorie') {
        employees[i].department = 'HR'
     }
@@ -335,9 +335,9 @@ const cat = {
     2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 */
 
-//Code Here
-let grumpyActivity;
-let fluffy2ndFriend;
+
+let grumpyActivity = cat.catFriends[0].activities[1]
+let fluffy2ndFriend = cat.catFriends[1].name
 
 /// ////////////// PROBLEM 17 ///////////////////
 
