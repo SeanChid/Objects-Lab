@@ -300,9 +300,12 @@ const employees = [
 */
 
 function employeeUpdater() {
-  for (let employee of employees) {
-    if (employee.firstName === 'Theo') {
-      employees.splice(employees[employee]-1, 1)
+  for (let i in employees) {
+    if (employees[i].firstName === 'Theo') {
+      employees.splice(i, 1)
+    }
+    if (employees[i].firstName === 'Lorie') {
+       employees[i].department = 'HR'
     }
   }
   return employees
